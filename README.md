@@ -1,2 +1,2 @@
-# FitFusion
-Fitness Tracker App
+# Memerator
+A silly meme app
