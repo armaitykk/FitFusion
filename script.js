@@ -41,7 +41,7 @@ function startBackgroundColorChange() {
         const currentColor = colors[currentIndex];
         const nextColor = colors[nextIndex];
 
-        document.body.style.animation = 'colorChange 5s forwards'; // Set animation property for smooth fade
+        document.body.style.animation = 'colorChange 5s forwards'; 
 
         // Define the keyframes for the animation
         const keyframes = `
