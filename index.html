@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meme Creator</h1>
+        <!-- Container for stage lights -->
+        <div id="stageLightsContainer" class="stage-lights-container"></div>
+        <div class="meme-generator">
+            <input type="file" id="imageInput" accept="image/*">
+            <textarea id="topText" placeholder="Top text"></textarea>
+            <textarea id="bottomText" placeholder="Bottom text"></textarea>
+            <button id="generateMemeButton" onclick="generateMeme()">Generate Meme</button>
+            <button id="partyModeButton" onclick="togglePartyMode()">Party Mode</button>
+            <button id="downloadButton" onclick="downloadMeme()">Download Meme</button>
+        </div>
+        <div class="center-container"> <!-- Parent container for centering -->
+            <div id="memePreview" class="meme-preview">
+                <img id="previewImage" src="#" alt="Meme Preview">
+            </div>
+        </div>
+
+    </div>    
+    <!-- three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Your main script -->
+    <script src="script.js"></script>
+</body>
+</html>

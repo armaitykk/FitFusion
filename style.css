@@ -1,0 +1,95 @@
+/* style.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    Background: linear-gradient(to bottom, #ff00ff, #00ffff);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.meme-generator {
+    text-align: center;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+}
+
+textarea {
+    width: calc(100% - 40px); 
+    max-width: 300px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.meme-generator {
+    text-align: center;
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #150aeb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #e31bdc;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.meme-preview {
+    max-width: 80%; /* Adjust the width of the meme preview container */
+    text-align: center; /* Center the contents */
+}
+
+#previewImage {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container.party-mode {
+    animation: rainbowBackground 10s linear infinite; /* Animation to transition between rainbow colors */
+}
+
+@keyframes rainbowBackground {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
