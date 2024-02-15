@@ -19,9 +19,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.meme-generator {
-    text-align: center;
-}
 
 input[type="file"] {
     display: block;
@@ -61,11 +58,11 @@ button:hover {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+    height: 500px; /* Full viewport height */
 }
 
 .meme-preview {
-    max-width: 80%; /* Adjust the width of the meme preview container */
+    max-width: 40%; /* Adjust the width of the meme preview container */
     text-align: center; /* Center the contents */
 }
 
